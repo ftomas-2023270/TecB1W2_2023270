@@ -1,18 +1,4 @@
 .conteiner {
-    position: relative;
-  }
-  
-  .imagen-fondo {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .imagen-superpuesta {
-    top: 50px; /* Distancia desde la parte superior */
-    left : 500px;
-    height: auto;
-  }
-body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -20,7 +6,7 @@ body {
     color: #333;
     line-height: 1.6;
 }
-h1 {
+.main-header {
     text-align: center;
     color: #0d47a1;
     margin-top: 20px;
@@ -35,7 +21,8 @@ h2 {
     font-size: 2.5em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-p {
+
+.text {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -44,8 +31,12 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-a {
-    display: inline-block;
+.btn-link {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: auto;
+    width: 100px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
@@ -60,4 +51,31 @@ a {
 a:hover {
     background-color: #1565c0;
 }
-  
+
+
+.img
+{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+    height: 400px;
+    width: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+  /*
+position: relative;
+}
+
+.imagen-fondo {
+  width: 100%;
+  height: 100%;
+}
+
+.imagen-superpuesta {
+  top: 50px;  Distancia desde la parte superior 
+  left : 500px;
+  height: auto;
+  */
