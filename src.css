@@ -2,21 +2,31 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #e3f2fd, #90caf9);
+    background: linear-gradient(135deg, #1e4f72, #012441);
     color: #333;
     line-height: 1.6;
 }
 .main-header {
     text-align: center;
-    color: #0d47a1;
+    color: #ffffff;
+    bleed: 0;
     margin-top: 20px;
     font-size: 2.5em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-h2 {
+.kinal-header {
     text-align: center;
-    color: #0d47a1;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.second-header {
+    text-align: center;
+    color: #ffffff;
+    bleed: 0;
     margin-top: 15px;
     font-size: 2.5em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -26,11 +36,20 @@ h2 {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
+    bleed: 100;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.kinal-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 .btn-link {
     display: block; 
     margin-left: auto; 
@@ -49,33 +68,89 @@ h2 {
 }
 
 a:hover {
-    background-color: #1565c0;
+    background-color: #005fcc;
 }
 
 
-.img
+.tbh-img
 {
+    border-radius: 360px;
     display: block; 
     margin-left: auto; 
     margin-right: auto;
     text-align: center;
     height: 400px;
-    width: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: auto; 
+    background-color: #ffffff;
 }
 
-
-  /*
-position: relative;
+.img {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+    height: 400px;
+    width: auto; 
+    background-color: #ffffff;
+}
+.portrait{
+    position: relative;
 }
 
-.imagen-fondo {
-  width: 100%;
-  height: 100%;
+.img-back {
+    width: 100%;
+    height: 100%;
 }
 
-.imagen-superpuesta {
-  top: 50px;  Distancia desde la parte superior 
-  left : 500px;
-  height: auto;
-  */
+.img-front {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 60%;
+}
+
+.deslizable-list {
+    width: 100%; 
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 30px; /* Espaciado entre logos */
+    overflow-x: auto; /* Habilitar scroll horizontal */
+    padding: 20px 0; /* Espaciado interno para el scroll */
+    scrollbar-width: thin; 
+  }
+
+  .deslizable-list img{
+    
+    object-fit: contain; /* Mantiene proporciones */
+    transition: transform 0.3s ease; /* Animación suave */
+    height: 400px;
+    }
+
+.deslizable-list img:hover{
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+  
+  ul {
+    list-style-type: circle; 
+    padding: 0;
+}
+  
+  li {
+    display: grid   ; 
+    align-items: center;
+  }
+  
+  
+  span {
+    font-size: 16px;
+  }
+  .center-content {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que el contenido interno esté alineado al centro */
+    justify-content: center; /* Opcional, centra verticalmente si es necesario */
+    height: 100%; /* Si quieres centrar verticalmente en toda la pantalla */
+}
