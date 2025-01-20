@@ -154,3 +154,36 @@ a:hover {
     justify-content: center; /* Opcional, centra verticalmente si es necesario */
     height: 100%; /* Si quieres centrar verticalmente en toda la pantalla */
 }
+.container {
+    background-color: #004080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header .container {
+    background-color: #004080;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .nav ul {
+    top: auto;
+text-align: center;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav a:hover {
+    color: #ffd700;
+  }
