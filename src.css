@@ -1,6 +1,4 @@
-/* src.css */
-
-/* General */
+/* General Biografy*/
 .bio-body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -10,9 +8,8 @@
   color: #333;
 }
 
-/* Header */
 .bio-header {
-  background-color: #b5c70f;
+  background-color: #c7b50f;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -23,7 +20,6 @@
   margin: 0;
 }
 
-/* Main container */
 .bio-main {
   margin: 20px auto;
   max-width: 800px;
@@ -33,20 +29,18 @@
   border-radius: 8px;
 }
 
-/* Text styles */
 .bio-text {
   margin-bottom: 15px;
   text-align: justify;
 }
 
 h2.bio-second-header {
-  color: #b5c70f;
+  color: #c7ab0f;
   font-size: 1.5rem;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-/* Image */
 .bio-img {
   display: block;
   max-width: 100%;
@@ -55,17 +49,29 @@ h2.bio-second-header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
 .bio-footer {
   text-align: center;
-  background-color: #bc4410;
+  background-color: #c50606;
   color: white;
   padding: 10px 0;
   margin-top: 20px;
   font-size: 0.9rem;
 }
 
-/* Responsiveness */
+.bio-btn-link {
+  color: white;
+  background-color: #005fcc;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.bio-btn-link:hover {
+  background-color: #003d99;
+}
+
 @media (max-width: 768px) {
   main {
       margin: 10px;
@@ -89,8 +95,8 @@ h2.bio-second-header {
   background-size: contain;
   color: #333;
 }
-
-/* Estilo general */
+/*--------------------------------------------------------------------------------------------*/
+/* General Activity */
 .act-body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -132,7 +138,7 @@ h2.bio-second-header {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.btn-link {
+.act-btn-link {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -145,10 +151,9 @@ h2.bio-second-header {
   transition: background-color 0.3s ease;
   width: fit-content;
 }
-.btn-link:hover {
+.act-btn-link:hover {
   background-color: #005fcc;
 }
-/* Diseño responsive */
 @media (max-width: 768px) {
   .act-section {
       flex-direction: column;
@@ -157,104 +162,208 @@ h2.bio-second-header {
   .act-img {
       max-width: 100%;
   }
-
+}
+/*---------------------------------------------------------------------*/
+/*General Kinal*/
 /* Reset básico */
+/* Reset & General Styles */
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
+}
+.k-body {
+  margin: 0 auto;
+  height: 100vh; /* 100% del alto de la ventana */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  background-color: #f0f0f0e3; /* Fondo claro */
+  font-family: Arial, sans-serif; /* Fuente general */
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #333;
+/* Header */
+.k-header {
+  background-color: #012441;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 24px; /* Tamaño de la fuente */
+  color: #333; /* Color oscuro */
+  margin-bottom: 15px; 
+
 }
 
-/* Encabezado */
-.header {
-  background-color: #004080;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 1rem 0;
-}
-
-.header .container {
+.k-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: auto;
+  margin: 0 auto;
 }
 
-.nav ul {
+.k-logo img {
+  max-width: 150px;
+  background-color: #fff;
+  right: 0;
+}
+
+.k-nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
 
-.nav a {
+.k-nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
 }
 
-.nav a:hover {
+.k-nav a:hover {
   color: #ffd700;
 }
 
-/* Sección Hero */
-.hero {
-  background: linear-gradient(135deg, #1e4f72, #012441);
-  color: white;
-  text-align: center;
-  padding: 4rem 2rem;
+/* Hero Section */
+.k-portrait-container {
+  position: relative;
+  max-width: 100%;  
 }
 
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.k-img-back  {
+  width: 100%; /* La primera imagen ocupa todo el contenedor */
+  height: auto;
 }
 
-.btn-link {
-  color: white;
-  background-color: #005fcc;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+.k-img-front {
+  position: absolute;
+  top: 0; /* Posiciona la imagen al principio de la imagen 1 */
+  right: 0; /* Alinea la imagen a la izquierda */
+  width: 50%; /* Ajusta el tamaño de la segunda imagen */
+  height: auto; /* Asegura que la imagen frontal quede encima de la de fondo */
 }
 
-.btn-link:hover {
-  background-color: #003d99;
+.k-tbh-img {
+  position: relative;
+  object-fit: cover; /* Asegura que la imagen no se distorsione */ 
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 200px;
 }
-
-/* Programas */
-.programs ul {
+.k-center-content {
+  margin: 0 auto;
+  text-align: center; /* Centra el texto dentro del contenedor */
+  padding: 20px; /* Espacio interno */
+  background-color: rgb(255, 255, 255); /* Fondo blanco para el contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
   display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 1rem 0;
+  flex-direction: column; /* Apila la imagen y el texto en una columna */
+  align-items: center; /* Centra los elementos en la columna */
+  justify-content: center;
+  text-align: left; /* Alinea el texto a la izquierda */
 }
 
-.programs li {
-  list-style: none;
-  flex: 0 0 auto;
-  width: 300px;
-  text-align: center;
-}
-
-.programs img {
+/* Contenedor de texto */
+.k-text-container {
   width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.k-center-content span {
+  font-size: 16px; /* Tamaño de la fuente */
+  color: #666; /* Color gris claro */
+  line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+}
+.k-text {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto; 
+  justify-content: center;
+}
+/* Carousel Section */
+.k-carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.k-deslizable-list {
+  position: relative;
+}
+
+.k-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.k-carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.k-img {
+  height: 500px;
+  display: block;
   border-radius: 10px;
 }
 
+.k-text {
+  margin: 0 auto  ;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.k-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.k-prev, .k-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.k-prev:hover, .k-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* Footer */
-.footer {
+footer {
   background: #012441;
   color: white;
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
+}
+
+@media (max-width: 480px) {
+  .k-header {
+      font-size: 18px; /* Aún más pequeño en pantallas muy pequeñas */
+  }
+
+  .k-center-content span {
+      font-size: 12px; /* Reduce aún más el tamaño del texto */
+  }
+
+  .k-tbh-img {
+      max-width: 180px; /* La imagen sigue reduciéndose en pantallas pequeñas */
+  }
 }
