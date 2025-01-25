@@ -80,9 +80,65 @@
             }
         </script>
     </div>
-
+    <div class="k-partner_container">
+        <section class="partners-section">
+            <div class="partners-title">PARTNERS</div>
+            <table class="partners-table">
+              <tr>
+                <td><img src="https://pbs.twimg.com/profile_images/378800000157875465/c63c2b8d136b280577f6aa23cd825ca0_400x400.png" alt="Unis" /></td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCvqaEKw6JH09vYS3FnaN5yw_xPTvX1KucTg&s" alt="Cisco NWA" /></td>
+                <td><img src="https://maksikoms.lv/images/Partners/Pearson-Vue_Logo_Small.jpg" alt="Vue Person" /></td>
+              </tr>
+              <tr>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkUKV46eBB0j3jZ1hAvoPmJ-L2k3eJDYfLSA&s" alt="VMware" /></td>
+                <td><img src="https://inglesutn.com.ar/wp-content/uploads/2024/03/dyned.jpg" alt="Dyned" /></td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoxL6O0oj4Q1V4TzDy2IlYuRnrQ4plaOtKiA&s" alt="Honda" /></td>
+              </tr>
+              <tr>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQgxjyZ-fOK5AypBQa6LHzZEqyA2dHGNwalQ&s" alt="Autodesk" /></td>
+                <td><img src="https://tentulogo.com/wp-content/uploads/2019/04/Oracle-CABECERA-POST-BLOG.jpg" alt="Oracle" /></td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGND3luufZnEmOXqFYWN2V19n3FSPfdZseQ&s" alt="ETS" /></td>
+              </tr>
+            </table>
+        </section>          
+    </div>
+    <div class="k-panoramic-img-container">
+        <img src="https://static.wixstatic.com/media/128120_7f3b9fbf981448809326f69585851cb9~mv2.jpg/v1/fill/w_1850,h_948,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/128120_7f3b9fbf981448809326f69585851cb9~mv2.jpg" 
+             alt="instalaciones kinal" class="k-img-kinal">
+        <script>
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+            });
+        }, { threshold: 0.5 }); // Umbral de visibilidad, en este caso 50%
+        
+        // Seleccionamos la imagen a observar
+        const image = document.querySelector('.k-img-kinal');
+        observer.observe(image); // Comenzamos a observar la imagen
+        </script>    
+    </div>
+    <div class="k-help-container">
+        <!-- Primer cuadro -->
+        <div class="k-jobs">
+          <h3>¿ERES ANTIGUO ALUMNO?
+            ¡LAS EMPRESAS TE ESTÁN BUSCANDO!</h3>
+          <p>Durante 2023 recibimos más de 600 solicitudes de trabajo para nuestros antiguos alumnos.</p>
+          <a href="https://www.kinal.org.gt/trabajo">Empleos</a>
+        </div>
+    
+        <!-- Segundo cuadro -->
+        <div class="k-donate">
+          <h3>¡NECESITAMOS MÁS
+            JÓVENES DE ESTE LADO!</h3>
+          <p>Cada donación que haces ayuda a la educación de un joven guatemalteco de escasos recursos a tener una educación de calidad.</p>
+          <a href="https://www.kinal.org.gt/donar">Donar</a>
+        </div>
+      </div>
     <footer>
-        <p class="k-footer-text">Fundación Kinal © 2025</p>
+        <p class="k-footer-text">Fernando Tomás © 2025</p>
     </footer>
 </body>
 </html>
